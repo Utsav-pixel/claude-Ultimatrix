@@ -1,0 +1,63 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+vendor/
+bin/
+
+# Node / React
+node_modules/
+dist/
+build/
+.next/
+.nuxt/
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.venv/
+venv/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+data/*.db
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Uploads & generated content (keep dirs, ignore files)
+uploads/*
+!uploads/.gitkeep
+content/posts/*
+!content/posts/.gitkeep
+
+# claude-mem local state (plugin manages its own DB)
+.claude/plugins/
+
+# Build artifacts
+*.o
+*.a
+coverage.out
+coverage.html
