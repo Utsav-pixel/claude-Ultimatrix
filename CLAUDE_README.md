@@ -15,7 +15,6 @@ claude-boilerplate/
 │       └── ui-ux-pro-max/        # Same skill for Windsurf IDE
 ├── CLAUDE.md                     # Claude Code project config + pre-plan checklist
 ├── CLAUDE_README.md              # This file
-├── .env.example                  # Environment variable template
 └── .gitignore                    # Sensible defaults
 ```
 
@@ -47,13 +46,8 @@ npm install -g uipro-cli
 uipro init --ai claude
 ```
 
-### Step 4: Fill environment variables
-```bash
-cp .env.example .env
-# Edit .env with actual values
-```
 
-### Step 5: Open in Claude Code and start planning
+### Step 4: Open in Claude Code and start planning
 ```
 /claude-mem:mem-search <your project topic>
 /claude-mem:make-plan
@@ -101,3 +95,30 @@ cp .env.example .env
 - `settings.local.json` pre-approves common commands so Claude doesn't prompt every time
 - The `ui-ux-pro-max` skill data is ~1MB of curated design data (CSV files) — no internet needed
 - `CLAUDE.md` is auto-loaded by Claude Code at project open
+
+---
+
+## Contributing
+
+This boilerplate is minimal by design — every addition should make Claude meaningfully more capable for the next developer who clones it.
+
+**How to contribute:**
+
+1. Fork the repo
+2. Create a branch: `git checkout -b feature/your-idea`
+3. Keep it minimal — this is a boilerplate, not a framework
+4. Open a PR with: what you added, why it belongs here, and how to test it
+5. **Always update `CLAUDE.md` and `CLAUDE_README.md`** to reflect your addition
+
+**Wanted contributions:**
+
+| Feature | Notes |
+|---------|-------|
+| GitHub Actions for auto-commit summaries | Hook on push |
+| `claude-mem` auto-snapshot on session end | Via hooks |
+| Docker Compose templates per stack | Go, Node, Python |
+| More UI stacks in `ui-ux-pro-max` | Angular, SvelteKit |
+| MCP server auto-configuration | In `settings.local.json` |
+| Database schema generation from `CLAUDE.md` | Skill idea |
+
+If this saved you time → give it a **star** on GitHub. It helps others find it.

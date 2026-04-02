@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:npmjs.com)",
+      "Bash(npm --version)",
+      "Bash(npm install*)",
+      "Bash(npm run*)",
+      "Bash(npx*)",
+      "Bash(node --version)",
+      "Bash(go version:*)",
+      "Bash(go mod:*)",
+      "Bash(go get:*)",
+      "Bash(go run:*)",
+      "Bash(go build:*)",
+      "Bash(go test:*)",
+      "Bash(python3 --version)",
+      "Bash(python3 .claude/skills/*)",
+      "Bash(pip install*)",
+      "Bash(git status)",
+      "Bash(git log*)",
+      "Bash(git diff*)",
+      "Bash(git add*)",
+      "Bash(git commit*)",
+      "Bash(mkdir -p*)",
+      "Bash(ls*)"
+    ]
+  }
+}
