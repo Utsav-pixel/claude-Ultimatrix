@@ -23,7 +23,30 @@
       "Bash(git add*)",
       "Bash(git commit*)",
       "Bash(mkdir -p*)",
-      "Bash(ls*)"
+      "Bash(ls*)",
+      "WebSearch"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/block-dangerous.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/block-secret-push.sh"
+          }
+        ]
+      }
     ]
   }
 }

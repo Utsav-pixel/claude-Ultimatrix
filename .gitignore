@@ -53,7 +53,8 @@ uploads/*
 content/posts/*
 !content/posts/.gitkeep
 
-# claude-mem local state (plugin manages its own DB)
+# Claude Code — local/personal config (not for sharing)
+.claude/settings.local.json
 .claude/plugins/
 
 # Build artifacts
@@ -61,3 +62,4 @@ content/posts/*
 *.a
 coverage.out
 coverage.html
+**BLOG**
